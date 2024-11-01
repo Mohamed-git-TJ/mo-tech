@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 interface NavBarProps {
   companyName: string;
@@ -8,9 +9,9 @@ interface NavBarProps {
 
 function NavBar({ companyName, imgSrcPath }: NavBarProps) {
   return (
-    <nav className="navbar navbar expand-md navbar-dark bg-dark shadow">
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img
             src={imgSrcPath}
             width="30"
