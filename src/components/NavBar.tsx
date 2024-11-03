@@ -1,28 +1,36 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
+import imagePath from "../assets/eclipse.png";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+// import { useState } from "react";
 
-interface NavBarProps {
-  companyName: string;
-  imgSrcPath: string;
-  navItems: string[];
-}
+// interface NavBarProps {
+//   companyName: string;
+//   imgSrcPath: string;
+//   navItems: string[];
+// }
 
-function NavBar({ companyName, imgSrcPath, navItems }: NavBarProps) {
-  const [selectedIndex, setSelectedIndex] = useState(-1);
+type CustomLinkProps = {
+  className: string;
+  to: string;
+  children: React.ReactNode;
+};
+
+function NavBar() {
+  //const [selectedIndex, setSelectedIndex] = useState(-1);
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img
-            src={imgSrcPath}
+            src={imagePath}
             width="30"
             height="30"
             className="d-inline-block align-center"
             alt=""
           />
-          <span className="fw-bolder fs-4">{companyName}</span>
-        </a>
+          <span className="fw-bolder fs-4">MoTech</span>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -43,28 +51,41 @@ function NavBar({ companyName, imgSrcPath, navItems }: NavBarProps) {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav me-auto mb-2 mb-md-1">
-            {navItems.map((items, index) => (
-              <li
-                key={items}
-                className="nav-item"
-                onClick={() => setSelectedIndex(index)}
-              >
-                <a
-                  className={
-                    selectedIndex == index
-                      ? "nav-link active fw-bold"
-                      : "nav-link"
-                  }
-                  href="#"
-                >
-                  {items}
-                </a>
-              </li>
-            ))}
+            <CustomLink className="" to="/">
+              Home
+            </CustomLink>
+
+            <CustomLink className="" to="/projects">
+              Projects
+            </CustomLink>
+
+            <CustomLink className="" to="/information">
+              Information
+            </CustomLink>
+
+            <CustomLink className="" to="/aboutme">
+              About Me
+            </CustomLink>
           </ul>
         </div>
       </div>
     </nav>
+  );
+}
+
+function CustomLink({ className, to, children, ...props }: CustomLinkProps) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  return (
+    <li>
+      <Link
+        className={isActive ? "nav-link fw-bold active" : "nav-link"}
+        to={to}
+        {...props}
+      >
+        {children}
+      </Link>
+    </li>
   );
 }
 

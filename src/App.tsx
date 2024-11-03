@@ -1,18 +1,29 @@
 import NavBar from "./components/NavBar";
-import MainCard from "./components/MainCard";
+// import MainCard from "./components/MainCard";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import imagePath from "./assets/eclipse.png";
-import imagePath1 from "./assets/mohamedColegio.jpg";
+import Projects from "./pages/Projects";
+import Information from "./pages/Information";
+import AboutMe from "./pages/AboutMe";
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
 
 // (importar logo en el futuro) import imagePath from ''
+// let items = ["Home", "Projects", "Information", "Contact Me"];
+//<MainCard imgSrcPath={imagePath1} imgSrcPath1={imagePath}></MainCard>;
 function App() {
-  let items = ["Home", "Projects", "Information", "Contact Me"];
   return (
-    <div>
-      <NavBar companyName="MoTech" imgSrcPath={imagePath} navItems={items} />
-      <MainCard imgSrcPath={imagePath1} imgSrcPath1={imagePath}></MainCard>
-    </div>
+    <>
+      <NavBar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/information" element={<Information />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 
