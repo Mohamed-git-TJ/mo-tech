@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 // import MainCard from "./components/MainCard";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/aboutme" element={<AboutMe />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }
