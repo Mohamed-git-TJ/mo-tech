@@ -19,7 +19,7 @@ type CustomLinkProps = {
 function NavBar() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow">
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow rounded-bottom">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
