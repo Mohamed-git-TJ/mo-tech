@@ -1,6 +1,6 @@
-import imagePath from "../assets/eclipse.png";
 import githubIcon from "../icons/githubsvg.svg";
 import linkedinIcon from "../icons/linkedinsvg.svg";
+import logoIcon from "../icons/logo.svg";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
@@ -29,7 +29,7 @@ function Footer() {
               <li className="text-secondary">07443405531</li>
             </ul>
           </div>
-          <div className="col-md-3 col-sm-6 me-2 ms-4">
+          <div className="col-md-3 col-sm-6 ms-4">
             <h5 className="fw-bolder">Links</h5>
             <ul className="list-unstyled">
               <li>
@@ -57,7 +57,7 @@ function Footer() {
           <div className="col-md-1 mx-auto">
             <Link className="footer-logo" to="/">
               <img
-                src={imagePath}
+                src={logoIcon}
                 width="120"
                 height="120"
                 className="d-inline-block align-center"

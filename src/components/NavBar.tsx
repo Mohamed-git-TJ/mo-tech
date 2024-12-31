@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import imagePath from "../assets/eclipse.png";
+//import imagePath from "../assets/eclipse.png";
+import logoIcon from "../icons/logo.svg";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 // import { useState } from "react";
 
@@ -23,10 +24,10 @@ function NavBar() {
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
-            src={imagePath}
+            src={logoIcon}
             width="30"
             height="30"
-            className="d-inline-block align-center"
+            className="d-inline-block align-center me-1"
             alt=""
           />
           <span className="fw-bolder fs-4">MoTech</span>
