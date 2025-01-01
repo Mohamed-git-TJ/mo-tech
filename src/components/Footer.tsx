@@ -1,6 +1,6 @@
 import githubIcon from "../icons/githubsvg.svg";
 import linkedinIcon from "../icons/linkedinsvg.svg";
-import logoIcon from "../icons/logo.svg";
+import footerLogoIcon from "../icons/footerlogo.svg";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
@@ -38,7 +38,7 @@ function Footer() {
                     src={githubIcon}
                     width="30"
                     height="30"
-                    className="d-inline-block align-center me-2 "
+                    className="d-inline-block align-center me-2"
                     alt=""
                   />
                 </a>
@@ -55,9 +55,9 @@ function Footer() {
             </ul>
           </div>
           <div className="col-md-1 mx-auto">
-            <Link className="footer-logo" to="/">
+            <Link className="footer-logo " to="/">
               <img
-                src={logoIcon}
+                src={footerLogoIcon}
                 width="120"
                 height="120"
                 className="d-inline-block align-center"
