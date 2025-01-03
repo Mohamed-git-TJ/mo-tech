@@ -2,7 +2,11 @@ import githubIcon from "../icons/githubsvg.svg";
 import linkedinIcon from "../icons/linkedinsvg.svg";
 import footerLogoIcon from "../icons/footerlogo.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 function Footer() {
+  const [hidden, setHidden] = useState(true);
+  const [hidden1, setHidden1] = useState(true);
+  const [hidden2, setHidden2] = useState(true);
   return (
     <div className="main-footer mt-auto bg-dark shadow rounded-top">
       <div className="card-body text-light ">
@@ -33,21 +37,30 @@ function Footer() {
             <h5 className="fw-bolder">Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="https://github.com/Mohamed-git-TJ">
+                <a
+                  onMouseEnter={() => setHidden(false)}
+                  onMouseLeave={() => setHidden(true)}
+                  href="https://github.com/Mohamed-git-TJ"
+                >
                   <img
                     src={githubIcon}
                     width="30"
                     height="30"
-                    className="d-inline-block align-center me-2"
+                    className={hidden ? "me-2" : "opacity-50 me-2 w-1 h-1"}
                     alt=""
                   />
                 </a>
-                <a href="https://www.linkedin.com/in/mohamed-triki-jouhrati-53a4b6321/">
+
+                <a
+                  onMouseEnter={() => setHidden1(false)}
+                  onMouseLeave={() => setHidden1(true)}
+                  href="https://www.linkedin.com/in/mohamed-triki-jouhrati-53a4b6321/"
+                >
                   <img
                     src={linkedinIcon}
                     width="30"
                     height="30"
-                    className="d-inline-block align-center"
+                    className={hidden1 ? "" : "opacity-50"}
                     alt=""
                   />
                 </a>
@@ -55,12 +68,17 @@ function Footer() {
             </ul>
           </div>
           <div className="col-md-1 mx-auto">
-            <Link className="footer-logo " to="/">
+            <Link
+              onMouseEnter={() => setHidden2(false)}
+              onMouseLeave={() => setHidden2(true)}
+              className="footer-logo "
+              to="/"
+            >
               <img
                 src={footerLogoIcon}
                 width="120"
                 height="120"
-                className="d-inline-block align-center"
+                className={hidden2 ? "" : "opacity-50"}
                 alt=""
               />
             </Link>

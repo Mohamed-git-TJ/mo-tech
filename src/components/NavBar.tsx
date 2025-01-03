@@ -1,8 +1,9 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 //import imagePath from "../assets/eclipse.png";
-import logoIcon from "../icons/logo.svg";
+import logoIcon from "../icons/logowhite.svg";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { useState } from "react";
 // import { useState } from "react";
 
 // interface NavBarProps {
@@ -19,18 +20,23 @@ type CustomLinkProps = {
 
 function NavBar() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [hidden, setHidden] = useState(true);
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow rounded-bottom">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+      <div className="container-fluid ">
+        <Link
+          onMouseEnter={() => setHidden(false)}
+          onMouseLeave={() => setHidden(true)}
+          className="navbar-brand"
+          to="/"
+        >
           <img
             src={logoIcon}
-            width="30"
-            height="30"
-            className="d-inline-block align-center me-1"
+            width="60"
+            height="60"
+            className={hidden ? "m-1" : "m-1 opacity-25"}
             alt=""
           />
-          <span className="fw-bolder fs-4">MoTech</span>
         </Link>
         <button
           className="navbar-toggler"

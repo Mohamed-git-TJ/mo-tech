@@ -26,8 +26,14 @@ function MainCard({ imgSrcPath, imgSrcPath1 }: MainCardProps) {
         <div className="flex-grow-1 ms-3">
           <h5 className="card-title">My story</h5>
           <p className="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
+            Of Moroccan/Spanish origin and graduated in Computer Science at the
+            University of Chester, Mohamed is a developer who came to the United
+            Kingdom with the ambition of improving his knowledge in software
+            development and with the idea of ​​covering different sectors
+            related to programming and web development. After completing his
+            studies, he has focused on the creation of his own projects with
+            which he plans to innovate and give another point of view regarding
+            problem solving.
           </p>
         </div>
       </div>
