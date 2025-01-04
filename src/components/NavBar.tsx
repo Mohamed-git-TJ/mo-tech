@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logoIcon from "../icons/logowhite.svg";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { useState } from "react";
+import "../scssFiles/main.scss";
 // import { useState } from "react";
 
 // interface NavBarProps {
@@ -22,7 +23,7 @@ function NavBar() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
   const [hidden, setHidden] = useState(true);
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow rounded-bottom">
+    <nav className="navbar navbar-expand-md navbar-dark bg-primary  shadow ">
       <div className="container-fluid ">
         <Link
           onMouseEnter={() => setHidden(false)}

@@ -3,14 +3,16 @@ import linkedinIcon from "../icons/linkedinsvg.svg";
 import footerLogoIcon from "../icons/footerlogo.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import "../scssFiles/main.scss";
+
 function Footer() {
   const [hidden, setHidden] = useState(true);
   const [hidden1, setHidden1] = useState(true);
   const [hidden2, setHidden2] = useState(true);
   return (
-    <div className="main-footer mt-auto bg-dark shadow rounded-top">
+    <div className="main-footer mt-auto bg-primary shadow ">
       <div className="card-body text-light ">
-        <h3 className="card-title border-bottom border-2 rounded mb-2 text-center pb-1">
+        <h3 className="card-title border-bottom border-4 mb-2 text-center pb-1">
           Developed by
         </h3>
         <div className="row">

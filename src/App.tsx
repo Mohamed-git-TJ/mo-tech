@@ -14,7 +14,7 @@ import { Route, Routes } from "react-router-dom";
 //<MainCard imgSrcPath={imagePath1} imgSrcPath1={imagePath}></MainCard>;
 function App() {
   return (
-    <div className="d-flex flex-column min-vh-100 overflow-hidden">
+    <div className="d-flex flex-column min-vh-100 overflow-hidden bg-secondary">
       <NavBar />
       <div className="container">
         <Routes>

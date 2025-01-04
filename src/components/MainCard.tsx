@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../scssFiles/main.scss";
 
 interface MainCardProps {
   imgSrcPath: string;
@@ -8,12 +9,12 @@ interface MainCardProps {
 
 function MainCard({ imgSrcPath, imgSrcPath1 }: MainCardProps) {
   return (
-    <div className="card mx-2 my-2">
-      <h5 className="card-header">
-        No estoy seguro de que escribir aqui (Sujeto a cambios)
-      </h5>
+    <div className="card mx-2 my-2 bg-info">
+      <h4 className="card-header bg-success text-white text-center">
+        Welcome to MoTech
+      </h4>
 
-      <div className="card-body d-flex">
+      <div className="card-body d-flex ">
         <div className="flex-shrink-0">
           <img
             src={imgSrcPath}
