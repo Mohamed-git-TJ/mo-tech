@@ -67,9 +67,9 @@ function NavBar() {
               Projects
             </CustomLink>
 
-            <CustomLink className="" to="/information">
+            {/* <CustomLink className="" to="/information">
               Information
-            </CustomLink>
+            </CustomLink> */}
 
             <CustomLink className="" to="/aboutme">
               About Me

@@ -6,14 +6,22 @@ interface MainCardProps {
   imgSrcPath: string;
   imgSrcPath1: string;
   flagsPath: string;
+  logoPath: string;
+  typescriptPath: string;
 }
 
-function MainCard({ imgSrcPath, imgSrcPath1, flagsPath }: MainCardProps) {
+function MainCard({
+  imgSrcPath,
+  imgSrcPath1,
+  flagsPath,
+  logoPath,
+  typescriptPath,
+}: MainCardProps) {
   return (
     <div className="card mx-2 mt-3 mb-5 bg-info">
-      <h4 className="card-header bg-success text-white text-center">
+      <h3 className="card-header bg-success text-white text-center">
         Welcome to MoTech
-      </h4>
+      </h3>
 
       <div className="card-body d-flex border-bottom border-2">
         <div className="flex-shrink-0">
@@ -26,7 +34,7 @@ function MainCard({ imgSrcPath, imgSrcPath1, flagsPath }: MainCardProps) {
           />
         </div>
         <div className="flex-grow-1 ms-3">
-          <h5 className="card-title">I'm Mohamed!</h5>
+          <h4 className="card-title">I'm Mohamed</h4>
           <p className="card-text">
             Of Moroccan/Spanish origin and graduated in Computer Science at the
             University of Chester, Mohamed is a developer who came to the United
@@ -48,9 +56,9 @@ function MainCard({ imgSrcPath, imgSrcPath1, flagsPath }: MainCardProps) {
           />
         </div>
       </div>
-      <div className="card-body d-flex">
+      <div className="card-body d-flex border-bottom border-2">
         <div className="flex-grow-1 ms-3">
-          <h5 className="card-title">Skills and Services</h5>
+          <h4 className="card-title">Skills and Services</h4>
           <p className="card-text">
             I specialize mainly in web development and programming in different
             languages. I have experience in development using React accompanied
@@ -62,27 +70,47 @@ function MainCard({ imgSrcPath, imgSrcPath1, flagsPath }: MainCardProps) {
             clients, helping designs and ideas to become real in a simple and
             functional way, to programming different software depending on the
             functions and features required for the development. <br /> <br />
-            <h6 className="fw-bold">
-              Tools, software and programming languages ​​I use.
-            </h6>
-            <p className="card-text">
-              <br />
-              VSCode <br />
-              GitHub
-              <br />
-              <br /> Typescript (React Dev)
-              <br /> Java
-              <br /> C++
-              <br /> Python
-            </p>
           </p>
         </div>
         <div className="flex-shrink-0">
           <img
             src={imgSrcPath1}
-            width="200"
-            height="200"
+            width="400"
+            height="400"
             className="img-fluid float-left rounded d-inline-block align-center"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="card-body d-flex text-center">
+        <div className="flex-grow-1 ms-3">
+          <h5 className="fw-bold">Tools, software and programming languages</h5>
+          <p className="card-text fw-bolder">
+            <br />
+            VSCode <br />
+            GitHub
+            <br />
+            <br /> Typescript (React Dev)
+            <br /> Java
+            <br /> C++
+            <br /> Python
+          </p>
+        </div>
+        <div className="flex-shrink-0">
+          <img
+            src={typescriptPath}
+            width="200"
+            height="40"
+            className="img-fluid "
+            alt=""
+          />
+        </div>
+        <div className="flex-shrink-0">
+          <img
+            src={logoPath}
+            width="200"
+            height="40"
+            className="img-fluid "
             alt=""
           />
         </div>

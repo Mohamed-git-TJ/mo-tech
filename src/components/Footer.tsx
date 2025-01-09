@@ -88,7 +88,7 @@ function Footer() {
         </div>
         <div className="footer-bottom mt-1">
           <p className="small text-center text-secondary">
-            @ motech.com (2024) | All Rights Reserved
+            @ motech.com (2025) | All Rights Reserved
           </p>
         </div>
       </div>
