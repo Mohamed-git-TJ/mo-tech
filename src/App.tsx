@@ -8,13 +8,14 @@ import Information from "./pages/Information";
 import AboutMe from "./pages/AboutMe";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
+import "./App.css";
 
 // (importar logo en el futuro) import imagePath from ''
 // let items = ["Home", "Projects", "Information", "Contact Me"];
 //<MainCard imgSrcPath={imagePath1} imgSrcPath1={imagePath}></MainCard>;
 function App() {
   return (
-    <div className="d-flex flex-column min-vh-100 overflow-hidden bg-secondary">
+    <div className="roboto d-flex flex-column min-vh-100 overflow-hidden bg-secondary">
       <NavBar />
       <div className="container">
         <Routes>
