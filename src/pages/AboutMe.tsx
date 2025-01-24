@@ -1,3 +1,5 @@
+import Form from "../components/Form";
+
 function AboutMe() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
   return (
@@ -31,12 +33,9 @@ function AboutMe() {
             <h3 className="card-header bg-success text-white text-center rounded-0 border border-4">
               Contact Me
             </h3>
-            <h4 className="card-title text-center mt-2 fw-bolder">
-              Send me a message
-            </h4>
-            <p className="card-text">
-              This space would be for the future contact form <br /> <br />
-            </p>
+            <div>
+              <Form></Form>
+            </div>
           </div>
         </div>
       </div>
