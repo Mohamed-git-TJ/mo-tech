@@ -29,7 +29,7 @@ function AboutMe() {
           </div>
         </div>
         <div className="col-sm-6">
-          <div className="card-body ">
+          <div className="card-body">
             <h3 className="card-header bg-success text-white text-center rounded-0 border border-4">
               Contact Me
             </h3>

@@ -1,9 +1,15 @@
 import githubIcon from "../icons/githubsvg.svg";
 import linkedinIcon from "../icons/linkedinsvg.svg";
 import footerLogoIcon from "../icons/footerlogo.svg";
-import { Link } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { useState } from "react";
 import "../scssFiles/main.scss";
+
+type CustomLinkProps = {
+  className: string;
+  to: string;
+  children: React.ReactNode;
+};
 
 function Footer() {
   const [hidden, setHidden] = useState(true);
@@ -33,6 +39,9 @@ function Footer() {
             <ul className="list-unstyled">
               <li className="text-secondary">mohamed02tj@gmail.com</li>
               <li className="text-secondary">07443405531</li>
+              <CustomLink className="" to="/aboutme">
+                SEND ME A MESSAGE
+              </CustomLink>
             </ul>
           </div>
           <div className="col-md-3 col-sm-6 ms-4">
@@ -94,6 +103,25 @@ function Footer() {
       </div>
     </div>
   );
+  function CustomLink({ className, to, children, ...props }: CustomLinkProps) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+    return (
+      <li>
+        <Link
+          className={
+            isActive
+              ? ""
+              : "w-50 nav-link card-header bg-success text-center rounded-0 border border-2 mt-2"
+          }
+          to={to}
+          {...props}
+        >
+          {children}
+        </Link>
+      </li>
+    );
+  }
 }
 
 export default Footer;
