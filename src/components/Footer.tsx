@@ -52,6 +52,7 @@ function Footer() {
                   onMouseEnter={() => setHidden(false)}
                   onMouseLeave={() => setHidden(true)}
                   href="https://github.com/Mohamed-git-TJ"
+                  target="_blank"
                 >
                   <img
                     src={githubIcon}
@@ -66,6 +67,7 @@ function Footer() {
                   onMouseEnter={() => setHidden1(false)}
                   onMouseLeave={() => setHidden1(true)}
                   href="https://www.linkedin.com/in/mohamed-triki-jouhrati-53a4b6321/"
+                  target="_blank"
                 >
                   <img
                     src={linkedinIcon}
