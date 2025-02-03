@@ -1,6 +1,6 @@
-import githubIcon from "../icons/githubsvg.svg";
-import linkedinIcon from "../icons/linkedinsvg.svg";
-import footerLogoIcon from "../icons/footerlogo.svg";
+import githubIcon from "../icons/footer/githubsvg.svg";
+import linkedinIcon from "../icons/footer/linkedinsvg.svg";
+import footerLogoIcon from "../icons/footer/footerlogo.svg";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { useState } from "react";
 import "../scssFiles/main.scss";

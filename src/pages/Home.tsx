@@ -1,8 +1,8 @@
-import imagePath from "../assets/projectScreenshot.png";
-import imagePath1 from "../assets/mohamedColegio.jpg";
-import flagsPath from "../assets/flags.png";
-import logoPath from "../assets/vscodeGithubLogo.png";
-import typescriptPath from "../assets/typescriptReact.png";
+import imagePath from "../assets/homePage/projectScreenshot.png";
+import imagePath1 from "../assets/homePage/mohamedColegio.jpg";
+import flagsPath from "../assets/homePage/flags.png";
+import logoPath from "../assets/homePage/vscodeGithubLogo.png";
+import typescriptPath from "../assets/homePage/typescriptReact.png";
 import MainCard from "../components/MainCard";
 
 function Home() {
