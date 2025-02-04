@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Form() {
@@ -21,6 +21,21 @@ function Form() {
         }
       );
   };
+
+  function handleSubmit() {
+    alert("Message Sent");
+    location.reload();
+  }
+
+  const [inputValueName, setInputValueName] = useState("");
+  const [inputValueEmail, setInputValueEmail] = useState("");
+  const [inputValueMessage, setInputValueMessage] = useState("");
+
+  const validity =
+    inputValueName.length == 0 ||
+    inputValueEmail.length == 0 ||
+    inputValueMessage.length == 0;
+
   return (
     <form ref={form} onSubmit={sendEmail}>
       <div className="input-box">
@@ -30,6 +45,8 @@ function Form() {
           className="field"
           placeholder="Your Name"
           name="name"
+          value={inputValueName}
+          onChange={(e) => setInputValueName(e.target.value)}
           required
         />
       </div>
@@ -40,6 +57,8 @@ function Form() {
           className="field"
           placeholder="Your Email"
           name="email"
+          value={inputValueEmail}
+          onChange={(e) => setInputValueEmail(e.target.value)}
           required
         />
       </div>
@@ -50,10 +69,19 @@ function Form() {
           className="field message"
           placeholder="Your Message"
           name="message"
+          value={inputValueMessage}
+          onChange={(e) => setInputValueMessage(e.target.value)}
           required
         />
       </div>
-      <input type="submit" className="btn btn-primary btn-lg btn-block"></input>
+
+      <button
+        onClick={handleSubmit}
+        className="btn btn-primary btn-lg btn-block"
+        disabled={validity}
+      >
+        Submit
+      </button>
     </form>
   );
 }
