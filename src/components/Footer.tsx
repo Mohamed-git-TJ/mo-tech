@@ -111,11 +111,8 @@ function Footer() {
     return (
       <li>
         <Link
-          className={
-            isActive
-              ? ""
-              : "w-50 nav-link card-header bg-success text-center rounded-0 border border-2 mt-2"
-          }
+          className="w-50 nav-link card-header bg-success text-center rounded-0 border border-2 mt-2"
+          hidden={isActive ? true : false}
           to={to}
           {...props}
         >

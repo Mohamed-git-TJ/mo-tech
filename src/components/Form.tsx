@@ -80,7 +80,7 @@ function Form() {
         className="btn btn-primary btn-lg btn-block"
         disabled={validity}
       >
-        Submit
+        {validity ? "Please fill form" : "Send"}
       </button>
     </form>
   );
