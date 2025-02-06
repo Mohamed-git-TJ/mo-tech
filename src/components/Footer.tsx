@@ -15,6 +15,7 @@ function Footer() {
   const [hidden, setHidden] = useState(true);
   const [hidden1, setHidden1] = useState(true);
   const [hidden2, setHidden2] = useState(true);
+  const isHomeActive = useMatch({ path: "/", end: true });
   return (
     <div className="main-footer mt-auto bg-primary shadow ">
       <div className="card-body text-light ">
@@ -82,7 +83,7 @@ function Footer() {
           </div>
           <div className="col-md-1 mx-auto">
             <Link
-              onMouseEnter={() => setHidden2(false)}
+              onMouseEnter={() => setHidden2(isHomeActive ? true : false)}
               onMouseLeave={() => setHidden2(true)}
               className="footer-logo "
               to="/"

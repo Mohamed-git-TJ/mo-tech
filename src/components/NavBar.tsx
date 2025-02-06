@@ -22,11 +22,12 @@ type CustomLinkProps = {
 function NavBar() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
   const [hidden, setHidden] = useState(true);
+  const isHomeActive = useMatch({ path: "/", end: true });
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary  shadow ">
       <div className="container-fluid ">
         <Link
-          onMouseEnter={() => setHidden(false)}
+          onMouseEnter={() => setHidden(isHomeActive ? true : false)}
           onMouseLeave={() => setHidden(true)}
           className="navbar-brand"
           to="/"
