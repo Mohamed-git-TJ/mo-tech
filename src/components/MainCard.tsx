@@ -3,19 +3,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../scssFiles/main.scss";
 
 interface MainCardProps {
-  imgSrcPath: string;
   imgSrcPath1: string;
   flagsPath: string;
   logoPath: string;
   typescriptPath: string;
+  workImgPath: string;
 }
 
 function MainCard({
-  imgSrcPath,
   imgSrcPath1,
   flagsPath,
   logoPath,
   typescriptPath,
+  workImgPath,
 }: MainCardProps) {
   return (
     <div className="card mx-2 mt-3 mb-5 bg-info">
@@ -26,10 +26,10 @@ function MainCard({
       <div className="card-body d-flex border-bottom border-2">
         <div className="flex-shrink-0">
           <img
-            src={imgSrcPath}
-            width="120"
-            height="80"
-            className="img-fluid float-left rounded d-inline-block align-center"
+            src={workImgPath}
+            width="280"
+            height="140"
+            className="img-fluid border border-dark float-left rounded-pill d-inline-block align-center"
             alt=""
           />
         </div>
