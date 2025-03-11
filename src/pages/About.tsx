@@ -1,7 +1,7 @@
 import Form from "../components/Form";
-import morocco from "../assets/aboutMePage/morocco.gif";
-import spain from "../assets/aboutMePage/spain.gif";
-import uniLogo from "../assets/aboutMePage/uniLogo.webp";
+import morocco from "../assets/aboutPage/morocco.gif";
+import spain from "../assets/aboutPage/spain.gif";
+import uniLogo from "../assets/aboutPage/uniLogo.webp";
 
 function AboutMe() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);

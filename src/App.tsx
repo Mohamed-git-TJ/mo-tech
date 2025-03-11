@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Projects from "./pages/Projects";
 import Information from "./pages/Information";
-import AboutMe from "./pages/AboutMe";
+import AboutMe from "./pages/About";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";

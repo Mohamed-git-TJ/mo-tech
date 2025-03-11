@@ -38,7 +38,7 @@ function Footer() {
           <div className="col-md-3 col-sm-6 me-4 ms-4">
             <h5 className="fw-bolder">Contact Details</h5>
             <ul className="list-unstyled">
-              <li className="text-secondary">mohamed02tj@gmail.com</li>
+              <li className="text-secondary">contact@mo-technology.com</li>
               <li className="text-secondary">07443405531</li>
               <CustomLink className="" to="/aboutme">
                 SEND ME A MESSAGE
@@ -106,6 +106,7 @@ function Footer() {
       </div>
     </div>
   );
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   function CustomLink({ className, to, children, ...props }: CustomLinkProps) {
     const resolvedPath = useResolvedPath(to);
     const isActive = useMatch({ path: resolvedPath.pathname, end: true });

@@ -73,7 +73,7 @@ function NavBar() {
             </CustomLink> */}
 
             <CustomLink className="" to="/aboutme">
-              About Me
+              About
             </CustomLink>
           </ul>
         </div>
