@@ -40,7 +40,7 @@ function Footer() {
             <ul className="list-unstyled">
               <li className="text-secondary">contact@mo-technology.com</li>
               <li className="text-secondary">07443405531</li>
-              <CustomLink className="" to="/aboutme">
+              <CustomLink className="" to="/about">
                 SEND ME A MESSAGE
               </CustomLink>
             </ul>

@@ -5,10 +5,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Projects from "./pages/Projects";
 import Information from "./pages/Information";
-import AboutMe from "./pages/About";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import About from "./pages/About";
 
 // (importar logo en el futuro) import imagePath from ''
 // let items = ["Home", "Projects", "Information", "Contact Me"];
@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/information" element={<Information />} />
-          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
       <Footer />

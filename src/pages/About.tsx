@@ -2,9 +2,13 @@ import Form from "../components/Form";
 import morocco from "../assets/aboutPage/morocco.gif";
 import spain from "../assets/aboutPage/spain.gif";
 import uniLogo from "../assets/aboutPage/uniLogo.webp";
+import { useEffect } from "react";
 
-function AboutMe() {
+function About() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
+  useEffect(()=>{
+    document.title ="About"
+  })
   return (
     <div className="card mx-2 mt-3 mb-5 bg-info">
       <h3 className="card-header bg-success text-white text-center">
@@ -74,4 +78,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe;
+export default About;
