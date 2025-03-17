@@ -38,50 +38,48 @@ function Form() {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
+      <h5 className="mt-2 fw-bold">Name</h5>
       <div className="input-box">
-        <label>Full Name</label>
         <input
           type="text"
-          className="field"
-          placeholder="Your Name"
+          className="field form-control border border-dark border-2 rounded-0"
           name="name"
           value={inputValueName}
           onChange={(e) => setInputValueName(e.target.value)}
           required
         />
       </div>
+      <h5 className="mt-2 fw-bold">Email</h5>
       <div className="input-box">
-        <label>Email</label>
+        
         <input
           type="email"
-          className="field"
-          placeholder="Your Email"
+          className="field form-control border border-dark border-2 rounded-0"
           name="email"
           value={inputValueEmail}
           onChange={(e) => setInputValueEmail(e.target.value)}
           required
         />
       </div>
+      <h5 className="mt-2 fw-bold">Message</h5> 
       <div className="input-box">
-        <label>Message</label>
-        <input
-          type="text"
-          className="field message"
-          placeholder="Your Message"
+        <textarea
+          className="field message form-control border border-dark border-2 rounded-0"
           name="message"
           value={inputValueMessage}
           onChange={(e) => setInputValueMessage(e.target.value)}
           required
         />
       </div>
-
+      <div className="d-grid gap-4 col-6 mx-auto">
       <button
         onClick={handleSubmit}
-        className="btn btn-primary btn-lg btn-block"
+        className="btn btn-primary mt-3"
         disabled={validity}
       >
-        {validity ? "Please fill form" : "Send"}
+        {validity ? "Fill Form" : "Send"}
       </button>
+      </div>
     </form>
   );
 }
