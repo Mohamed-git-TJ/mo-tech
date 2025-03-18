@@ -7,7 +7,7 @@ import { useEffect } from "react";
 function About() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
   useEffect(()=>{
-    document.title ="About"
+    document.title ="About | MoTech"
   })
   return (
     <div className="card mx-2 mt-3 mb-5 bg-info">

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 function Information() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
   useEffect(()=>{
-    document.title ="Information"
+    document.title ="Information | MoTech"
   })
   return <h1>Information</h1>;
 }

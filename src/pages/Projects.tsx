@@ -3,7 +3,7 @@ import { useEffect } from "react";
 function Projects() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
 useEffect(()=>{
-  document.title ="Projects"
+  document.title ="Projects | MoTech"
 })
 
   return (
