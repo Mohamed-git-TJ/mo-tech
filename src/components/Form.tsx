@@ -9,7 +9,7 @@ function Form() {
 
     emailjs
       .sendForm("service_malp0ua", "template_79rdqmr", form.current, {
-        publicKey: "C5eFLZIMllfTypX4d",
+        publicKey: "_8xBOW3VL7tQocRnW",
       })
       .then(
         () => {
@@ -72,14 +72,11 @@ function Form() {
         />
       </div>
       <div className="d-grid gap-4 col-6 mx-auto">
-      <button
-        onClick={handleSubmit}
+      <input type="submit" value={validity ? "Fill Form" : "Send"} onClick={handleSubmit}
         className="btn btn-primary mt-3"
-        disabled={validity}
-      >
-        {validity ? "Fill Form" : "Send"}
-      </button>
+        disabled={validity}></input>
       </div>
+      
     </form>
   );
 }
