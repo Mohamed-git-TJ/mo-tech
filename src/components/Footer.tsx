@@ -81,11 +81,11 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-md-1 mx-auto">
+          <div className="col-md-1 col-sm-6 ms-4">
             <Link
               onMouseEnter={() => setHidden2(isHomeActive ? true : false)}
               onMouseLeave={() => setHidden2(true)}
-              className="footer-logo "
+              className="footer-logo"
               to="/"
             >
               <img

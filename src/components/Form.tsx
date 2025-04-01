@@ -25,6 +25,7 @@ function Form() {
   function handleSubmit() {
     alert("Message Sent");
     location.reload();
+    
   }
 
   const [inputValueName, setInputValueName] = useState("");
@@ -72,7 +73,7 @@ function Form() {
         />
       </div>
       <div className="d-grid gap-4 col-6 mx-auto">
-      <input type="submit" value={validity ? "Fill Form" : "Send"} onClick={handleSubmit}
+      <input type="button" value={validity ? "Fill Form" : "Send"} onClick={handleSubmit}
         className="btn btn-primary mt-3"
         disabled={validity}></input>
       </div>
