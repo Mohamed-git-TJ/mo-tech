@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 function Form() {
   const form = useRef();
@@ -22,10 +23,31 @@ function Form() {
       );
   };
 
-  function handleSubmit() {
-    alert("Message Sent");
+  function message() {
+    return (
+      <text>
+        The message has been sent
+        <br />
+        Press reset to clear form
+        <br />
+      </text>
+    );
+  }
+  function notify() {
+    toast.info(message, {
+      className: "bg-success h6",
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  }
+  function reset() {
     location.reload();
-    
   }
 
   const [inputValueName, setInputValueName] = useState("");
@@ -52,7 +74,6 @@ function Form() {
       </div>
       <h5 className="mt-2 fw-bold">Email</h5>
       <div className="input-box">
-        
         <input
           type="email"
           className="field form-control border border-dark border-2 rounded-0"
@@ -62,7 +83,7 @@ function Form() {
           required
         />
       </div>
-      <h5 className="mt-2 fw-bold">Message</h5> 
+      <h5 className="mt-2 fw-bold">Message</h5>
       <div className="input-box">
         <textarea
           className="field message form-control border border-dark border-2 rounded-0"
@@ -72,12 +93,23 @@ function Form() {
           required
         />
       </div>
-      <div className="d-grid gap-4 col-6 mx-auto">
-      <input type="button" value={validity ? "Fill Form" : "Send"} onClick={handleSubmit}
-        className="btn btn-primary mt-3"
-        disabled={validity}></input>
+      <div className="d-grid gap-2 col-6 mx-auto">
+        <input
+          type="button"
+          value={validity ? "Fill Form" : "Send"}
+          onClick={notify}
+          className="btn btn-primary mt-3"
+          disabled={validity}
+        ></input>
+        <ToastContainer />
+        <input
+          type="button"
+          value="Reset"
+          onClick={reset}
+          className="btn btn-primary"
+          disabled={validity}
+        ></input>
       </div>
-      
     </form>
   );
 }
