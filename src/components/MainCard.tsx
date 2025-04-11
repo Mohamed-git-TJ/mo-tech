@@ -12,7 +12,6 @@ interface MainCardProps {
 
 function MainCard({
   imgSrcPath1,
-  flagsPath,
   logoPath,
   typescriptPath,
   workImgPath,
