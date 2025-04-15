@@ -45,6 +45,7 @@ function Form() {
       progress: undefined,
       theme: "dark",
     });
+    event.preventDefault;
   }
   function reset() {
     location.reload();
@@ -95,7 +96,7 @@ function Form() {
       </div>
       <div className="d-grid gap-2 col-6 mx-auto">
         <input
-          type="button"
+          type="submit"
           value={validity ? "Fill Form" : "Send"}
           onClick={notify}
           className="btn btn-primary mt-3"
