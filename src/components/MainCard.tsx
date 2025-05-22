@@ -34,14 +34,13 @@ function MainCard({
             <div className="card-body">
               <h4 className="card-title">I'm Mohamed</h4>
               <p className="card-text">
-                Of Moroccan/Spanish origin and graduated in Computer Science at
-                the University of Chester, Mohamed is a developer who came to
-                the United Kingdom with the ambition of improving his knowledge
-                in software development and with the idea of ​​covering
-                different sectors related to programming and web development.
-                After completing his studies, he has focused on the creation of
-                his own projects with which he plans to innovate and give
-                another point of view regarding problem solving.
+                Of Moroccan-Spanish origin and a Computer Science graduate from
+                the University of Chester, Mohamed is a passionate developer who
+                moved to the United Kingdom with the ambition to deepen his
+                expertise in software development and explore various areas of
+                programming and web development. Since completing his studies,
+                he has focused on building his own projects, aiming to bring
+                innovative solutions and fresh perspectives to problem-solving.
               </p>
             </div>
           </div>
@@ -57,18 +56,17 @@ function MainCard({
             <div className="card-body">
               <h4 className="card-title">Skills and Services</h4>
               <p className="card-text">
-                I specialize mainly in web development and programming in
-                different languages. I have experience in development using
-                React accompanied by TypeScript and HTML along with Bootstrap as
-                a library for CSS. On the other hand, I also have different
-                projects in various programming languages ​​such as Java, C++
-                and Python, although the latter is the one I am most familiar
-                with. <br /> <br />
-                The services I offer range from developing web pages for
-                different clients, helping designs and ideas to become real in a
-                simple and functional way, to programming different software
-                depending on the functions and features required for the
-                development. <br /> <br />
+                I specialize primarily in web development and programming across
+                multiple languages. My experience includes building applications
+                with React, TypeScript, and HTML, using Bootstrap as a CSS
+                framework. In addition, I've worked on various projects in Java,
+                C++, and Python — with Python being the language I’m most
+                proficient in. <br /> <br />
+                I offer a range of services, from developing websites tailored
+                to clients’ needs — turning designs and ideas into simple,
+                functional solutions — to programming custom software based on
+                specific features and functionality requirements.
+                <br /> <br />
               </p>
             </div>
           </div>

@@ -28,9 +28,8 @@ function Footer() {
             <ul className="list-unstyled">
               <li>
                 <p className="text-secondary">
-                  This website has been created with the purpose of offering my
-                  services of software development as well as my own personal
-                  portfolio
+                  Welcome to my website — a space where I offer my software
+                  development services and share my personal portfolio.
                 </p>
               </li>
             </ul>
