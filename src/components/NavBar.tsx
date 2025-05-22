@@ -24,7 +24,7 @@ function NavBar() {
   const [hidden, setHidden] = useState(true);
   const isHomeActive = useMatch({ path: "/", end: true });
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-primary  shadow ">
+    <nav className="navbar navbar-expand-md navbar-dark bg-primary shadow border-bottom border-3">
       <div className="container-fluid ">
         <Link
           onMouseEnter={() => setHidden(isHomeActive ? true : false)}
