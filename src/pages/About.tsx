@@ -6,12 +6,12 @@ import { useEffect } from "react";
 
 function About() {
   //const [selectedIndex, setSelectedIndex] = useState(-1);
-  useEffect(()=>{
-    document.title ="About | MoTech"
-  })
+  useEffect(() => {
+    document.title = "About | MoTech";
+  });
   return (
-    <div className="card mx-2 mt-3 mb-5 bg-info">
-      <h3 className="card-header bg-success text-white text-center">
+    <div className="card mx-2 mt-3 mb-5 bg-info border border-3">
+      <h3 className="card-header bg-success text-white text-center border-bottom border-3">
         About Mo'Tech
       </h3>
       <div className="row">

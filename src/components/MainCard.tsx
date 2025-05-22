@@ -17,20 +17,20 @@ function MainCard({
   workImgPath,
 }: MainCardProps) {
   return (
-    <div className="card mx-2 mt-3 mb-5 bg-info">
-      <h3 className="card-header bg-success text-white text-center">
+    <div className="card mx-2 mt-3 mb-5 bg-info border border-3">
+      <h3 className="card-header bg-success text-white text-center border-bottom border-3">
         Welcome to MoTech
       </h3>
 
-      <div className="card-body border-bottom border-2">
-        <div className="row g-0">
+      <div className="card-body border-bottom border-3">
+        <div className="row g-0 ">
           <div className="col-md-4">
             <img
               src={workImgPath}
-              className="img-fluid border border-3 border-light rounded"
+              className="img-fluid border border-3 border-dark rounded"
             />
           </div>
-          <div className="col-md-8">
+          <div className="col-md-8 ">
             <div className="card-body">
               <h4 className="card-title">I'm Mohamed</h4>
               <p className="card-text">
@@ -51,7 +51,7 @@ function MainCard({
         </div>
       </div>
 
-      <div className="card-body border-bottom border-2">
+      <div className="card-body border-bottom border-3">
         <div className="row g-0">
           <div className="col-md-8">
             <div className="card-body">

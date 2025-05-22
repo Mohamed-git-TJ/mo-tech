@@ -17,9 +17,9 @@ function Footer() {
   const [hidden2, setHidden2] = useState(true);
   const isHomeActive = useMatch({ path: "/", end: true });
   return (
-    <div className="main-footer mt-auto bg-primary shadow ">
-      <div className="card-body text-light ">
-        <h3 className="card-title border-bottom border-4 mb-2 text-center pb-1">
+    <div className="main-footer mt-auto bg-primary shadow border border-3">
+      <div className="card-body text-light">
+        <h3 className="card-title border-bottom border-3 mb-2 text-center pb-1">
           Developed by
         </h3>
         <div className="row">

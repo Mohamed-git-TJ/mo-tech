@@ -66,7 +66,7 @@ function Form() {
       <div className="input-box">
         <input
           type="text"
-          className="field form-control border border-dark border-2 rounded-0"
+          className="field form-control border border-dark border-3 rounded-0"
           name="name"
           value={inputValueName}
           onChange={(e) => setInputValueName(e.target.value)}
@@ -77,7 +77,7 @@ function Form() {
       <div className="input-box">
         <input
           type="email"
-          className="field form-control border border-dark border-2 rounded-0"
+          className="field form-control border border-dark border-3 rounded-0"
           name="email"
           value={inputValueEmail}
           onChange={(e) => setInputValueEmail(e.target.value)}
@@ -87,7 +87,7 @@ function Form() {
       <h5 className="mt-2 fw-bold">Message</h5>
       <div className="input-box">
         <textarea
-          className="field message form-control border border-dark border-2 rounded-0"
+          className="field message form-control border border-dark border-3 rounded-0"
           name="message"
           value={inputValueMessage}
           onChange={(e) => setInputValueMessage(e.target.value)}
@@ -99,7 +99,7 @@ function Form() {
           type="submit"
           value={validity ? "Fill Form" : "Send"}
           onClick={notify}
-          className="btn btn-primary mt-3"
+          className="btn btn-primary mt-3 border border-3"
           disabled={validity}
         ></input>
         <ToastContainer />
@@ -107,7 +107,7 @@ function Form() {
           type="button"
           value="Reset"
           onClick={reset}
-          className="btn btn-primary"
+          className="btn btn-primary border border-3"
           disabled={validity}
         ></input>
       </div>
