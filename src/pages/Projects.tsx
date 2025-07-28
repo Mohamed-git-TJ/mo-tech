@@ -25,12 +25,12 @@ function Projects() {
 
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="10000">
-      <img src="src/assets/projectsPage/weatherApp/madrid.png" className="img-fluid d-block w-100"  alt="..."/>
+      <img src="/src/assets/projectsPage/weatherApp/madrid.png" className="img-fluid d-block w-100"  alt="..."/>
       <div className="carousel-caption d-none d-md-block">
       </div>
     </div>
     <div className="carousel-item" data-bs-interval="2000">
-      <img src="src/assets/projectsPage/weatherApp/london.png" className="img-fluid d-block w-100"  alt="..."/>
+      <img src="/src/assets/projectsPage/weatherApp/london.png" className="img-fluid d-block w-100"  alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
