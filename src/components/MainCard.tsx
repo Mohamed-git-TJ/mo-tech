@@ -27,7 +27,7 @@ function MainCard({
           <div className="col-md-4">
             <img
               src={workImgPath}
-              className="img-fluid border border-3 border-dark rounded"
+              className="img-thumbnail img-fluid border border-3 border-dark rounded"
             />
           </div>
           <div className="col-md-8 ">
