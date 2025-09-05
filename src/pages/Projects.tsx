@@ -113,6 +113,100 @@ function Projects() {
               </div>
             </div>
           </div>
+          <div className="col">
+            <div className="card bg-info border border-dark border-3">
+              <div
+                id="carouselExampleDark"
+                className="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div className="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="0"
+                    className="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                </div>
+
+                <div className="carousel-inner">
+                  <div
+                    className="carousel-item active"
+                    data-bs-interval="10000"
+                  >
+                    <img
+                      src="/src/assets/projectsPage/taskTracker/json.png"
+                      className="img-fluid d-block w-100"
+                      alt="..."
+                    />
+                    <div className="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div className="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="/src/assets/projectsPage/taskTracker/mainMenu.png"
+                      className="img-fluid d-block w-100"
+                      alt="..."
+                    />
+                    <div className="carousel-caption d-none d-md-block"></div>
+                  </div>
+                </div>
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div className="card-body">
+                <h5 className="card-title fw-bold">
+                  Task Tracked CLI -{" "}
+                  <small className="text-body-secondary fw-bold">Python</small>
+                </h5>
+                <p className="card-text">
+                  This project is a basic Task Tracker CLI developed in Python. It allows users to add, update, delete, and list tasks directly from the command line. Each task can be assigned a status, such as in progress or done, to help track its progress. Each task has specific attributes (ID, title, description, and status) and is stored in a JSON file for simple persistent storage. While the project is simple and leaves plenty of room for improvements such as adding file/database storage or a more advanced interface, it has been a great way to deepen my understanding of Python, especially in areas like functions and CLI interactions.
+                </p>
+              </div>
+              <div className="card-footer">
+                <small className="text-body-secondary fw-bold">
+                  GitHub:{" "}
+                  <a
+                    className="link-opacity-100"
+                    href="https://github.com/Mohamed-git-TJ/TaskTracker"
+                    target="_blank"
+                  >
+                    https://github.com/Mohamed-git-TJ/TaskTracker
+                  </a>
+                </small>
+              </div>
+            </div>
+          </div>
 
           {/* <div className="card">
     <img src="..." className="card-img-top" alt="..."/>
